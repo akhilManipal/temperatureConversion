@@ -1,32 +1,58 @@
-# Temperature Conversion Practical Assignment
 
-Welcome to the Temperature Conversion Practical Assignment! This repository serves as a starting point for your implementation. Below you will find the instructions for cloning this template, completing your assignment, and submitting your work.
+# Assignment Submission Guide
 
-## Getting Started
+Welcome to the Assignment Repository. This guide will walk you through the steps required to submit your assignment correctly.
 
-To get started with this practical assignment, you'll need to create your own copy of this repository by using it as a template.
+## Step 1: Fork the Repository
 
-### Cloning the Template
+1. At the top-right corner of this repository page, click the **Fork** button.
+2. This action will create a copy of this repository in your GitHub account named `<your-username>/Assignment-Repository`.
 
-1. Click the "Use this template" button located at the top of the GitHub repository page.
-2. Name your new repository in the following format: `temperature-conversion-<your-username>`.
-3. Make sure to create the repository as **Private** to keep your work independent and confidential.
-4. Once created, clone your new repository to your local machine:
-   ```sh
-   git clone https://github.com/<your-username>/temperature-conversion-<your-username>.git
-5. Navigate into the cloned directory:
-```sh
-cd temperature-conversion-<your-username>
+## Step 2: Clone Your Fork
 
-# Completing the Assignment
+1. On your fork's GitHub page, click the **Code** button and copy the URL provided.
+2. Open your terminal or command prompt and run the following command:
 
-You will find a starter code file named ConverterUtil.java where you should add your implementation. Do not change the method signatures as they will be used for testing your solution.
+    ```bash
+    git clone <URL-you-copied>
+    cd Assignment-Repository
+    ```
 
-# Testing Your Code
+## Step 3: Create a New Branch
 
-This repository is configured with GitHub Actions to run tests every time you push your changes. To test your code locally, you can use the provided Gradle wrapper script:
+Create a new branch for your assignment work. Replace `<branch-name>` with a meaningful name, such as your name or student ID.
 
-```sh
-./gradlew test
+```bash
+git checkout -b <branch-name>
+```
 
-Make sure your code passes all the tests before submitting your final version.
+## Step 4: Complete Your Assignment
+
+1. Add or modify the files in your local repository as per the assignment requirements.
+2. Use your preferred editor or IDE to write your code or answers.
+
+## Step 5: Commit Your Changes
+
+As you make changes, commit them to your branch. Make sure your commit messages are meaningful.
+
+```bash
+git add .
+git commit -m "Describe your changes here"
+```
+
+## Step 6: Push Your Changes
+
+Push your changes to your fork on GitHub.
+
+```bash
+git push origin <branch-name>
+```
+
+## Step 7: Open a Pull Request
+
+1. Go to the original repository you forked.
+2. Click on the **Pull requests** tab and then click the **New pull request** button.
+3. Select your fork and branch as the source, and the original repository's branch you want to merge into as the target.
+4. Fill in the pull request details and click **Create pull request**.
+
+Follow these steps carefully to ensure your assignment submission is successful. If you have any issues, please contact your instructor.
