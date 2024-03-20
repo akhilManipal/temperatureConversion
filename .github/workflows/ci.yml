@@ -1,0 +1,33 @@
+name: Java CI for Temperature Conversion
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v2
+      with:
+        java-version: '17'
+        distribution: 'temurin' # This is the successor to 'adopt'
+
+    - name: Grant execute permission for Gradlew
+      run: chmod +x ./gradlew
+      
+
+    - name: Build with Gradle
+      run: ./gradlew build --no-daemon
+      
+
+    - name: Run tests
+      run: ./gradlew test --no-daemon
+      
